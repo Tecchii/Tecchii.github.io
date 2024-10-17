@@ -10,13 +10,14 @@ body {
 
 .container {
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
 }
 
 .logo {
-    width: 25vh;
-    height: 25vh;
-    margin: 0 auto 1vh;
+    width: 20rem;
+    height: auto;
+    margin: 0 auto 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,24 +27,21 @@ body {
 
 .logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     cursor: default;
-}
-
-h1 {
-    margin-bottom: 3vh;
 }
 
 .squares {
     display: flex;
     justify-content: center;
-    gap: 2vh;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .square {
-    width: 8vh;
-    height: 8vh;
+    width: 8rem;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +58,32 @@ h1 {
 
 .square:hover img {
     opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 6rem;
+        margin-bottom: 1.5rem;
+    }
+    .logo {
+        width: 45%;
+    }
+    .square {
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+    .logo {
+        width: 75%;
+    }
+    .square {
+        width: 5rem;
+        height: 5rem;
+    }
 }
