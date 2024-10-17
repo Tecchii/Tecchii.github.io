@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.logo {
+    width: 25vh;
+    height: 25vh;
+    margin: 0 auto 1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: default;
+}
+
+h1 {
+    margin-bottom: 3vh;
+}
+
+.squares {
+    display: flex;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.square {
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.square:hover img {
+    opacity: 0.8;
+}
