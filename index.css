@@ -23,6 +23,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
+    animation: flyFadeIn 1.5s ease forwards;
 }
 
 .logo img {
@@ -30,6 +31,17 @@ body {
     height: auto;
     object-fit: cover;
     cursor: default;
+}
+
+@keyframes flyFadeIn {
+    0% {
+        transform: translateY(-20rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .squares {
@@ -48,6 +60,12 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.69s ease-in;
+}
+
+.square.fade-in {
+    opacity: 1;
 }
 
 .square img {
